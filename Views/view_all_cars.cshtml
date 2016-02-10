@@ -1,0 +1,11 @@
+<h1>Inventory</h1>
+<ul>
+  @foreach(var car in Model)
+  {
+    <li>@car.GetMake()</li>
+  }
+</ul>
+<p><a href="/">Add another car</a></p>
+<form action="/cars_cleared" method="post">
+  <button type="submit" name="button">Clear all cars</button>
+</form>
